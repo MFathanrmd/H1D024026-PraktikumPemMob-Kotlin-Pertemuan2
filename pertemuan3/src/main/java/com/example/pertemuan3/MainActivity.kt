@@ -1,0 +1,23 @@
+package com.example.pertemuan3
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Scaffold
+import androidx.compose.ui.Modifier
+import com.example.pertemuan3.ui.screen.DaftarProdukScreen
+import com.example.pertemuan3.ui.theme.MFathangamingTheme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            MFathangamingTheme {
+                DaftarProdukScreen()
+            }
+        }
+    }
+}
